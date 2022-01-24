@@ -1,0 +1,20 @@
+//- layout.pug
+html
+  head
+    title sagil dance acadmey 
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/classinfo") Class Info]
+    block content
+    footer#footer
+        | Copyright © 2019 SagilAcademy.com | All Rights Reserved
