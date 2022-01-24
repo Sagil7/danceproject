@@ -12,15 +12,16 @@ async function main() {
   await mongoose.connect('mongodb://localhost:27017/contactDances');
 }
 
+
 const contactSchema = new mongoose.Schema({
     name: String,
     phone: String,
-    address: String,
+    Adress: String,
     email: String,
-    desc: String
+    Desc: String
   });
 
-  const Contact = mongoose.model('Kitten', contactSchema);
+  const Contact = mongoose.model('Contact', contactSchema);
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
@@ -68,9 +69,7 @@ app.post('/contact', (req, res)=>{
 
 })
     
-    
-    
-    // START THE SERVER
+     // START THE SERVER
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
 });
