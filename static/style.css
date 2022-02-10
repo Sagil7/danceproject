@@ -62,7 +62,7 @@ height: 42px;
     font-family: 'ZCOOL QingKe HuangYou';
     font-size: 65px;
     align-items: center;
-    background: center/cover no-repeat url("/static/bg.jpg") ;
+    background: center/cover no-repeat url("../static/bg.jpg") ;
     height: 425px;
     background-color: red;
 }
