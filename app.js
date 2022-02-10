@@ -20,9 +20,8 @@ const contactSchema = new mongoose.Schema({
     email: String,
     Desc: String
   });
-
+  
   const Contact = mongoose.model('Contact', contactSchema);
-
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())
@@ -73,3 +72,4 @@ app.post('/contact', (req, res)=>{
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
 });
+ 
